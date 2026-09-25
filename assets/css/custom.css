@@ -1,0 +1,30 @@
+/* Additional navigation and pages for Astral. */
+#nav { display:flex; justify-content:center; gap:0.7em; height:auto; padding:0 0 1.4em; }
+#nav a { margin:0; width:1em; flex:0 0 1em; }
+#nav a span { display:block; }
+#nav a:focus-visible { outline:2px solid white; outline-offset:6px; }
+#nav a[aria-disabled="true"] { opacity:0.4; cursor:default; }
+details { border-top:1px solid #ddd; padding:0.8em 0; }
+summary { cursor:pointer; font-weight:400; }
+details p { margin:0.75em 0 0; }
+label { display:block; margin-bottom:0.4em; }
+button:disabled, input:disabled { opacity:0.5; cursor:not-allowed; }
+[hidden] { display:none !important; }
+.external-link { display:inline-block; margin-bottom:1em; }
+@media screen and (max-width:736px) {
+ #nav { gap:0.4em; flex-wrap:wrap; padding-bottom:1em; }
+ #nav a { font-size:1.5em; width:2.1em; flex-basis:2.1em; height:2em; }
+ #nav a span { position:static; opacity:1; visibility:visible; background:none; color:white; font-size:0.36em; width:auto; height:auto; line-height:1.5; margin:0.5em 0 0; }
+ #nav a span:after, #nav a:after { display:none; }
+}
+
+/* Site typography. Icon fonts keep their own font family. */
+body, input, textarea, select, button {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Solid black page background. */
+body {
+  background-color: #000000;
+  background-image: none;
+}

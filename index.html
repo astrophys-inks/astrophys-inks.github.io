@@ -4,12 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Astrophys Inks</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -18,12 +19,16 @@
 			<div id="wrapper">
 
 				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
-					</nav>
+					<nav id="nav" aria-label="Main navigation">
+<a href="#home" class="icon solid fa-home" aria-label="Home"><span>Home</span></a>
+<a href="#work" class="icon solid fa-folder" aria-label="Work"><span>Work</span></a>
+<a href="#contact" class="icon solid fa-envelope" aria-label="Contact"><span>Contact</span></a>
+<a href="#faqs" class="icon solid fa-question-circle" aria-label="FAQs"><span>FAQs</span></a>
+<a href="#booking" class="icon solid fa-calendar-check" aria-label="Booking"><span>Booking</span></a>
+<a href="#waitlists" class="icon solid fa-list" aria-label="Waitlists"><span>Waitlists</span></a>
+<a href="#merch" class="icon solid fa-shopping-bag" aria-label="Merch"><span>Merch</span></a>
+<a href="https://www.instagram.com/astrophys.inks/" class="icon brands fa-instagram" data-link="instagram" aria-label="Instagram"><span>Instagram</span></a>
+</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -97,20 +102,21 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<p data-notice="contact">Complete the form below to send me a message.</p>
+<form data-form="contact" action="https://formspree.io/f/xqpalgwp" method="post">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" required placeholder="Name" aria-label="Name" />
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="email" name="email" required placeholder="Email" aria-label="Email" />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" aria-label="Subject" />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" required placeholder="Message" aria-label="Message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message" />
@@ -119,6 +125,43 @@
 									</div>
 								</form>
 							</article>
+
+<article id="faqs" class="panel">
+<header><h2>FAQs</h2></header>
+<p>Answers to common questions will be added here.</p>
+<details><summary>How do I book?</summary><p>Visit the <a href="#booking">booking page</a>. Use the linked form to submit your request.</p></details>
+<details><summary>How can I join a waitlist?</summary><p>See the <a href="#waitlists">waitlists page</a> for updates.</p></details>
+<details><summary>Where can I find merch?</summary><p>Visit the <a href="#merch">merch page</a>. Shop details are coming soon.</p></details>
+</article>
+<article id="booking" class="panel">
+<header><h2>Booking Form</h2></header>
+<p>Use the booking form to share your request.</p>
+<a class="button external-link" href="https://forms.gle/ywMji9mz7qegM4kKA" data-link="booking">Open booking form</a>
+</article>
+<article id="waitlists" class="panel">
+<header><h2>Waitlists</h2></header>
+<p>Choose the waitlist you would like to join.</p>
+<section><h3>Worldwide</h3><p><a class="button external-link" href="https://forms.gle/8XX1pPd6EX16T3kZ7" data-link="waitlist">Join worldwide waitlist</a></p></section>
+<section><h3>Local</h3><p><a class="button external-link" href="https://forms.gle/F57bXv9yviREN1GG8" data-link="waitlistLocal">Join local waitlist</a></p></section>
+</article>
+<article id="merch" class="panel">
+<header><h2>Merch</h2></header>
+<p>Merch gallery coming soon. The images below are sample placeholders.</p>
+<section aria-label="Merch gallery"><div class="row">
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic01.jpg" alt="Merch placeholder 1" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic02.jpg" alt="Merch placeholder 2" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic03.jpg" alt="Merch placeholder 3" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic04.jpg" alt="Merch placeholder 4" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic05.jpg" alt="Merch placeholder 5" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic06.jpg" alt="Merch placeholder 6" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic07.jpg" alt="Merch placeholder 7" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic08.jpg" alt="Merch placeholder 8" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic09.jpg" alt="Merch placeholder 9" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic10.jpg" alt="Merch placeholder 10" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic11.jpg" alt="Merch placeholder 11" loading="lazy"></span></div>
+<div class="col-4 col-6-medium col-12-small"><span class="image fit"><img src="images/pic12.jpg" alt="Merch placeholder 12" loading="lazy"></span></div>
+</div></section>
+</article>
 
 					</div>
 
@@ -137,6 +180,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script src="assets/js/site-config.js"></script>
+<script src="assets/js/site.js"></script>
 
 	</body>
 </html>
